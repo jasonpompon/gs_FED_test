@@ -1,6 +1,40 @@
-$primary-color: white;
-$secondary-color: #2a2a2a;
+@import "scss/variables.scss";
+@import "scss/media_queries.scss";
+
 
 body {
   background: $primary-color;
+
+  a {
+    text-decoration: inherit;
+    color: inherit;
+  }
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $primary-color;
+
+    li {float: right;};
+
+    li a {
+        display: inline-block;
+        color: $secondary-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+.icon {
+  color: $secondary-color
 }
