@@ -108,6 +108,42 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+.blog {
+  padding: 3em 2em;
+
+  text-align: center;
+
+  .card {
+    margin-right: 2em;
+    border: 1px solid lightgrey;
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+
+    #blog-img {
+      width: 100%;
+    }
+
+    .comment {
+      text-align: right;
+      display: inline;
+    }
+
+    .blog-wrapper {
+      padding: 1em;
+    }
+
+  }
+
+}
+
+footer {
+  background-color: $third-color;
+  text-align: center;
+  padding: 2em;
+}
+
 
 /************ Media Queries **************/
 
@@ -152,5 +188,20 @@ ul.topnav li.icon {display: none;}
     display: block;
     text-align: left;
   }
+}
 
+@media (max-width: 767px) {
+    .services {
+      .card {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .blog {
+      .card {
+        width: 100%;
+        display: block;
+      }
+    }
 }

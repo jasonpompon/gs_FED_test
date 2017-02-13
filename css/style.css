@@ -79,6 +79,29 @@ ul.topnav li.icon {
     margin: 0 auto;
     padding: 0.3em 2em; }
 
+.blog {
+  padding: 3em 2em;
+  text-align: center; }
+  .blog .card {
+    margin-right: 2em;
+    border: 1px solid lightgrey;
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    display: inline-block; }
+    .blog .card #blog-img {
+      width: 100%; }
+    .blog .card .comment {
+      text-align: right;
+      display: inline; }
+    .blog .card .blog-wrapper {
+      padding: 1em; }
+
+footer {
+  background-color: #F9792F;
+  text-align: center;
+  padding: 2em; }
+
 /************ Media Queries **************/
 @media screen and (max-width: 680px) {
   ul.topnav li {
@@ -107,3 +130,11 @@ ul.topnav li.icon {
   ul.topnav.responsive li a {
     display: block;
     text-align: left; } }
+
+@media (max-width: 767px) {
+  .services .card {
+    width: 100%;
+    display: block; }
+  .blog .card {
+    width: 100%;
+    display: block; } }
