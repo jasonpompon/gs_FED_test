@@ -21,7 +21,7 @@ ul.topnav li a {
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px; }
+  font-size: 0.8em; }
 
 ul.topnav li a:hover {
   background-color: #2a2a2a;
@@ -30,12 +30,48 @@ ul.topnav li a:hover {
 ul.topnav li.icon {
   display: none; }
 
+.logo {
+  display: inline-block;
+  float: left;
+  padding: 10px; }
+  .logo img {
+    width: 6em; }
+
+.banner {
+  height: 30em;
+  position: relative; }
+  .banner img {
+    height: 100%;
+    width: 100%; }
+  .banner .carousel-text {
+    color: black;
+    position: absolute;
+    top: 30%; }
+  .banner #read-more {
+    padding: 0.3em 0;
+    margin: 1.7em 21em;
+    color: white;
+    border: 1px solid white; }
+
+.about {
+  margin-top: 6em;
+  padding: 0em 22em;
+  text-align: center; }
+
+/************ Media Queries **************/
 @media screen and (max-width: 680px) {
   ul.topnav li {
     display: none; }
   ul.topnav li.icon {
     float: right;
-    display: inline-block; } }
+    display: inline-block; }
+  .banner {
+    height: 10em; }
+    .banner .carousel-text {
+      position: absolute;
+      top: 50%; }
+  .about {
+    padding: 0em 3em; } }
 
 @media screen and (max-width: 680px) {
   ul.topnav.responsive {
