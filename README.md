@@ -1,6 +1,6 @@
 # Get Started FED test
 
-### Instalation Instruction
+### Installation Instruction
 All these command is to be done in the command line after this repo has been cloned
 > to install the dependencies
 `bundle install`
@@ -21,7 +21,7 @@ I approach this test trying to built the website from the bottom to the footer d
 
 I decided to use bootstrap for the carousel as I figured given the about of time I will not have enough time to build it using plain js and css.
 
-However I haven't make use of any other bootstrap components in this project. I would have made the mobile friendly version much easier to do.
+However I haven't make use of any other bootstrap components in this project. It would have made the mobile friendly version much easier to do.
 
 
 ### Incomplete (what I would do if i had more that 4 hours)
