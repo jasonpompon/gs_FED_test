@@ -1,6 +1,4 @@
 @import "scss/variables.scss";
-@import "scss/media_queries.scss";
-
 
 body {
   background: $primary-color;
@@ -17,24 +15,52 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: $primary-color;
-
-    li {float: right;};
-
-    li a {
-        display: inline-block;
-        color: $secondary-color;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 17px;
-    }
 }
 
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: $secondary-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+ul.topnav li a:hover {
+  background-color: #2a2a2a;
+  color: $primary-color;
+}
 
 ul.topnav li.icon {display: none;}
 
-.icon {
-  color: $secondary-color
+@media screen and (max-width:680px) {
+  ul.topnav li {
+    display: none;
+    // float: left;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
